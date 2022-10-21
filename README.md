@@ -10,6 +10,7 @@
   
   ## Table of Contents
   * [Description](#description)
+  * [Technologies Used](#technoUse)
   * [Usage](#usefaq)
   * [Installation](#install)
   * [Testing](#test)
@@ -21,6 +22,14 @@
   ## Description
   Book review site
 
+  <a name = 'technoUse'></a>
+  ## Technologies Used
+  Node.js
+  Express.js
+  Handlebars.js
+  MYSQL and Sequelize ORM
+  Heroku
+  
   <a name = 'usefaq'></a>
   ## Usage
   Please use responsibly
@@ -39,11 +48,11 @@
 
   <a name = 'contributing'></a>
   ## Contributing to this Repo
-  Email us to get in touch
+  Message us on github
 
   <a name = 'questions'></a>
   ## Questions / Contact Details
-  This app can be found on my github page at (https://github.com/TeamWork).
-  TeamWork
+  This app can be found on the github page at (https://github.com/LizBailey75).
+  LizBailey75
 
   If you have any questions or need to contact me about this app, I can be reached on Github or by email at [Collaboration](Collaboration)
