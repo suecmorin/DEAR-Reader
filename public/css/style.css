@@ -1,0 +1,16 @@
+body{
+    background-image: url('./26105.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no repeat;
+    height: 100vh;
+    font-family: 'Garamond' , serif;
+  }
+.jumbotron {
+height: 100px;
+}
+
+.card {
+  margin-top: 150px;
+  
+}
