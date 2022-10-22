@@ -1,0 +1,15 @@
+body{
+    background-image: url('homepageimage.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no repeat;
+    height: 100vh;
+  }
+.jumbotron {
+background-image: blue;
+height: 100px;
+}
+.card {
+  margin-top: 250px;
+  
+}
