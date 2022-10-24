@@ -1,14 +1,14 @@
 body{
-<<<<<<< HEAD
-    background-image: url('./26105.jpg');
-=======
+
+
     background-image: url('homepageimage.jpg');
->>>>>>> 5bbfe31f00ac7616f64761938d05100091b22827
+
     background-position: center;
     background-size: cover;
     background-repeat: no repeat;
     height: 100vh;
-<<<<<<< HEAD
+
+
     font-family: 'Garamond' , serif;
   }
 .jumbotron {
@@ -17,14 +17,9 @@ height: 100px;
 
 .card {
   margin-top: 150px;
-=======
-  }
-.jumbotron {
-background-image: blue;
-height: 100px;
-}
-.card {
-  margin-top: 250px;
->>>>>>> 5bbfe31f00ac7616f64761938d05100091b22827
+
+
+
+
   
 }
