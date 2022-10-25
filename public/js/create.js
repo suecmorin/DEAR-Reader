@@ -5,7 +5,7 @@
   const createFormHandler = async (event) => {
     event.preventDefault();
   
-/write email and password to user file?
+//write email and password to user file?
   if (email && password) {
     const response = await fetch('/api/users', {
         method: 'POST',
