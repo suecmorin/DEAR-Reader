@@ -17,39 +17,38 @@
 //       type: DataTypes.STRING,
 //       allowNull: false,
       
-//     },
-//     author: {
-//       type: DataTypes.STRING,
-//       allowNull: false,
-//     },
-//     synopsis: {
-//       type: DataTypes.STRING,
-//       allowNull: false,
-//     },
-//     pagecount: {
-//         type: DataTypes.INTEGER,
-//         allowNull: false,
-//       },
-//     genre: {
-//       type: DataTypes.STRING,
-//       allowNull: false,
-//     },
-    // user_id: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false,
-    //   references: {
-    //       model: 'user',
-    //       key: 'id'
-    //   },
-    // },
-//   },
-//  {
-//     sequelize,
-//     timestamps: false,
-//     freezeTableName: true,
-//     underscored: true,
-//     modelName: 'book',
-//   },
-// );
+    },
+    author: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    synopsis: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    pagecount: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+      },
+    genre: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+          model: 'user',
+          key: 'user_id',
+      },
+    },
+  },
+ {
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'book',
+  },
+);
 
 // module.exports = Books;

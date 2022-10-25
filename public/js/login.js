@@ -41,12 +41,12 @@ const loginFormHandler = async (event) => {
     }
   };
   //these buttons are not working, the console logs just come up when page loads
-  document
+  //document
     let btn1 = document.getElementById('login-form')
     if (btn1) {
     btn1.addEventListener('submit', loginFormHandler);
     }console.log('btn clicked');
-  document
+  //document
     let btn2 =document.querySelector('.signup-form')
     if (btn2) {
     btn2.addEventListener('submit', signupFormHandler);
