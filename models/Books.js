@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const sequelize = require('../config/conection');
 
 class Books extends Model {
   
@@ -28,7 +28,7 @@ Books.init(
     },
     pagecount: {
         type: DataTypes.INTEGER,
-        allowNull: FALSE,
+        allowNull: false,
       },
     genre: {
       type: DataTypes.STRING,
@@ -36,6 +36,7 @@ Books.init(
     },
     user_id: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       references: {
           model: 'user',
           key: 'id'
