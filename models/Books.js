@@ -28,7 +28,7 @@ Books.init(
     },
     pagecount: {
         type: DataTypes.INTEGER,
-        allowNull: FALSE,
+        allowNull: false,
       },
     genre: {
       type: DataTypes.STRING,
@@ -38,7 +38,7 @@ Books.init(
       type: DataTypes.INTEGER,
       references: {
           model: 'user',
-          key: 'id'
+          key: 'user_id',
       },
     },
   },
