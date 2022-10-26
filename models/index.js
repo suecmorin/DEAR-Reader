@@ -23,7 +23,7 @@ Comments.belongsTo(User, {
 });
 
 Comments.belongsTo(Books, {
-    foreignKey: 'user_id'
+    foreignKey: 'book_id'
 });
 
 module.exports = { User, Books,Comments };
