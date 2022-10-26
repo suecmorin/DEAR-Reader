@@ -7,13 +7,13 @@ class Comments extends Model {
 
 Comments.init(
   {
-    id: {
+    comment_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
+    book_title: {
       type: DataTypes.STRING,
       allowNull: false,
       references: {
