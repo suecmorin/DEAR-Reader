@@ -18,7 +18,7 @@ Comments.init(
       allowNull: false,
       references: {
         model: 'book',
-        key: 'id',
+        key: 'book_id',
     },
     },
     user_id:{
