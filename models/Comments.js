@@ -7,7 +7,7 @@ class Comments extends Model {
 
 Comments.init(
   {
-    id: {
+    comment_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
@@ -29,7 +29,7 @@ Comments.init(
       },
     },
     comment: {
-      type: DataTypes.STRING(2000),
+      type: DataTypes.STRING,
       primaryKey: true,
       allowNull: false,
     },
