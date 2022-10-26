@@ -26,5 +26,5 @@ Comments.belongsTo(Books, {
     foreignKey: 'user_id'
 });
 
-module.exports = { User, /*Books,Comments*/ };
+module.exports = { User, Books,Comments };
 
