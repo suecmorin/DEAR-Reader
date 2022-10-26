@@ -50,4 +50,5 @@ const createuserFormHandler = async (event) => {
     let btn2 =document.querySelector('.signup-form')
     if (btn2) {
     btn2.addEventListener('submit', signupFormHandler);
-    }console.log('btn clicked')
+    }console.log('btn clicked');
+    
