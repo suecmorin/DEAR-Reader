@@ -1,21 +1,21 @@
-// const { Model, DataTypes } = require('sequelize');
-// const sequelize = require('../config/conection');
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/conection');
 
-// class Books extends Model {
+class Books extends Model {
   
-// }
+}
 
-// Books.init(
-//   {
-//     id: {
-//       type: DataTypes.INTEGER,
-//       allowNull: false,
-//       primaryKey: true,
-//       autoIncrement: true,
-//     },
-//     title: {
-//       type: DataTypes.STRING,
-//       allowNull: false,
+Books.init(
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false,
       
     },
     author: {
@@ -51,4 +51,4 @@
   },
 );
 
-// module.exports = Books;
+ module.exports = Books;
