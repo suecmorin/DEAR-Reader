@@ -1,5 +1,36 @@
 const router = require('express').Router();
+const { response } = require('express');
 const { User } = require('../../models');
+
+//router.post('./create', async (req, res) => {
+//  try {
+//    const userData = await userData(req.body.email);
+//    const validPassword = await userData(req.body.password);
+//  const checkUser = await User.findOne({ where: { email: req.body.email } });
+// if (userData === checkUser {
+// res
+// .status(400)
+// .json({ message:  'User already exists, please try again' });
+//   return;
+ // }
+ //router.post('/User', async (req, res) => {
+// try {
+//  res.newuser.create ({
+ //   user_id:
+ //   email: req.body.email
+  //  password: req.body.password
+   // }).then (function (newuser){
+   //   if (newuser) {
+   //     res.send(newuser);
+   //   response.status(200).send('New user added');
+   //      return;
+    //  } else {
+    //    response.status(400).send('Error in adding new user'); 
+//        return;
+    //  }
+   // });
+ // }):
+
 
 router.post('/login', async (req, res) => {
   try {
