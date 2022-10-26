@@ -15,11 +15,7 @@ Books.belongsTo(User, {
 });
 
 Books.hasMany(Comments, {
-<<<<<<< HEAD
     foreignKey: 'book_id'
-=======
-    foreignKey: 'user_id'
->>>>>>> d4932933880afc8c0d0d1df5d3a2cfeb37d7549b
 });
 
 Comments.belongsTo(User, {
@@ -27,11 +23,7 @@ Comments.belongsTo(User, {
 });
 
 Comments.belongsTo(Books, {
-<<<<<<< HEAD
     foreignKey: 'book_id'
-=======
-    foreignKey: 'user_id'
->>>>>>> d4932933880afc8c0d0d1df5d3a2cfeb37d7549b
 });
 
 module.exports = { User, /*Books,Comments*/ };

@@ -31,10 +31,6 @@ Comments.init(
     },
     comment: {
       type: DataTypes.STRING,
-<<<<<<< HEAD
-      primaryKey: true,
-=======
->>>>>>> d4932933880afc8c0d0d1df5d3a2cfeb37d7549b
       allowNull: false,
     },
     stars: {
