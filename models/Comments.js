@@ -1,9 +1,9 @@
-// const { Model, DataTypes } = require('sequelize');
-// const sequelize = require('../config/connection');
+ const { Model, DataTypes } = require('sequelize');
+ const sequelize = require('../config/connection');
 
-// class Comments extends Model {
+ class Comments extends Model {
   
-//  }
+  }
 
 Comments.init(
   {
@@ -40,13 +40,13 @@ Comments.init(
     },
   },
 
-//  {
-//     sequelize,
-//     timestamps: false,
-//     freezeTableName: true,
-//     underscored: true,
-//     modelName: 'comment',
-//   },
-// );
+ {
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'comment',
+  },
+);
 
-// module.exports = Comments;
+module.exports = Comments;
