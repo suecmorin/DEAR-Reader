@@ -16,6 +16,7 @@
   * [Testing](#test)
   * [License](#license)
   * [Contributing to this Repo](#contributing)
+  * [Contributers to this Repo](#contributers)
   * [Questions / Contact Details](#questions)
   
   <a name = 'description'></a>
@@ -27,8 +28,13 @@
   Node.js
   Express.js
   Handlebars.js
-  MYSQL and Sequelize ORM
+  MYSQL
+  Sequelize ORM
   Heroku
+  Material UI?
+
+  HTML 
+  CSS
   
   <a name = 'usefaq'></a>
   ## Usage
@@ -49,6 +55,13 @@
   <a name = 'contributing'></a>
   ## Contributing to this Repo
   Message us on github
+
+  <a name = 'contributers'></a>
+  ## Contributers to this Repo
+  Elizabeth Bailey
+  Jatanna Patterson
+  Sara Milligan
+  Sue Morin
 
   <a name = 'questions'></a>
   ## Questions / Contact Details
