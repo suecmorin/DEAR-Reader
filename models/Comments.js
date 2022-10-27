@@ -16,10 +16,7 @@ Comments.init(
     title: {
       type: DataTypes.STRING,
       allowNull: false,
-     references: {
-       model: 'comment',
-       key: 'title',
-   },
+     
       
     },
     user_id:{

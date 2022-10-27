@@ -16,11 +16,7 @@ Books.init(
     title: {
       type: DataTypes.STRING,
       allowNull: false,
-      references: {
-        model: 'book',
-        key: 'title',
-      }
-      
+           
     },
     author: {
       type: DataTypes.STRING,
