@@ -13,7 +13,7 @@ Books.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    book_title: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
       
@@ -22,18 +22,18 @@ Books.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    synopsis: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    pagecount: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-      },
-    genre: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
+    // synopsis: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
+    // pagecount: {
+    //     type: DataTypes.INTEGER,
+    //     allowNull: false,
+    //   },
+    // genre: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
