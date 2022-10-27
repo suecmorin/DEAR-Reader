@@ -7,26 +7,27 @@ class Comments extends Model {
 
 Comments.init(
   {
-    comment_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
-    },
+  //  comment_id: {
+  //   type: DataTypes.INTEGER,
+  //    allowNull: false,
+  //    primaryKey: true,
+  //    autoIncrement: true,
+  //  },
     title: {
       type: DataTypes.STRING,
       allowNull: false,
-      references: {
-        model: 'book',
-        key: 'id',
-    },
+  //    references: {
+  //      model: 'book',
+  //      key: 'title',
+//    },
+      primaryKey: true,
     },
     user_id:{
       type: DataTypes.INTEGER,
       allowNull: false,
       references:{
           model: 'user',
-          key: 'id',
+          key: 'user_id',
       },
     },
     comment: {
