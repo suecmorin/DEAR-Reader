@@ -1,27 +1,17 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
-// CREATE new user
-router.post('/', async (req, res) => {
+router.post('./create', async (req, res) => {
   try {
-    const dbUserData = await User.create({
-      username: req.body.username,
-      email: req.body.email,
-      password: req.body.password,
-    });
-
-    req.session.save(() => {
-      req.session.loggedIn = true;
-
-      res.status(200).json(dbUserData);
-    });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
+    const userData = await userData(req.body.email);
+//    const validPassword = await userData(req.body.password);
+  const checkUser = await User.findOne({ where: { username } });
+ if (userData === checkUser ) res.status(400).json({ message:  'User already exists, please try again' });
+   return } catch (err) {
+    res.status(400).json(err);
   }
 });
-
-// Login
+     
 router.post('/login', async (req, res) => {
   try {
     const dbUserData = await User.findOne({
@@ -33,7 +23,7 @@ router.post('/login', async (req, res) => {
     if (!dbUserData) {
       res
         .status(400)
-        .json({ message: 'Incorrect email or password. Please try again!' });
+        .json({ message: 'Incorrect username or password, please try again' });
       return;
     }
 
@@ -42,7 +32,7 @@ router.post('/login', async (req, res) => {
     if (!validPassword) {
       res
         .status(400)
-        .json({ message: 'Incorrect email or password. Please try again!' });
+        .json({ message: 'Incorrect username or password, please try again' });
       return;
     }
 
