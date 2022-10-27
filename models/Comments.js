@@ -16,11 +16,11 @@ Comments.init(
     title: {
       type: DataTypes.STRING,
       allowNull: false,
-  //    references: {
-  //      model: 'book',
-  //      key: 'title',
-//    },
-      primaryKey: true,
+     references: {
+       model: 'comment',
+       key: 'title',
+   },
+      
     },
     user_id:{
       type: DataTypes.INTEGER,
