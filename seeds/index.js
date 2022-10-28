@@ -1,16 +1,18 @@
-const sequelize = require('../config/connection');
-const seedBook = require('./bookData.json');
-const seedComments = require('./commentData.json');
+// const sequelize = require('../config/connection');
+// const Books = require('../models/Books');
+// const bookData = require('./bookData.json');
 
-const seedAll = async () => {
-  // Should we change this to force: false as well?
-  await sequelize.sync({ force: true });
+// const seedDatabase = async () => {
+  
+//   await sequelize.sync({ force: false });
 
-  await seedBook();
+//   await Books.bulkCreate(bookData, {
+//     individualHooks: true,
+//     returning: true,
+//   });
 
-  await seedComments();
+  
+//   process.exit(0);
+// };
 
-  process.exit(0);
-};
-
-seedAll();
+// seedDatabase();
