@@ -50,13 +50,26 @@
                   </div>
                 </div>
                 </div>
-   <div class="card  menu-card col-1-10 mt-0 bg-transparent rounded border-transparent text-centered" style="margin-left: 600px">
+   <div class="card  menu-card col-1-10 mt-0 bg-transparent rounded border-transparent text-centered" style="margin-left: -20px">
        <h3 class="card-header text-white">Update your previous review.</h3>
           <div class="card-body" id="updateComment">
             <div form class="d-flex">
                  <input type="text" class="form-control me-2" placeholder="Book Title" id="bookId"/>
                  <input type="text" class="form-control me-2" placeholder="Review" id="Comments"/>
-                 <input type="number" class="form-control me-2" placeholder="1-5 Stars" id="synopsis"/>
+                 <body>
+                  <div class="container">
+                    <div class="star-widget">
+                      <input type="radio" name="rate" id="rate-5">
+                      <label for="rate-5" class="fas fa-star"></label>
+                      <input type="radio" name="rate" id="rate-4">
+                      <label for="rate-4" class="fas fa-star"></label>
+                      <input type="radio" name="rate" id="rate-3">
+                      <label for="rate-3" class="fas fa-star"></label>
+                      <input type="radio" name="rate" id="rate-2">
+                      <label for="rate-2" class="fas fa-star"></label>
+                      <input type="radio" name="rate" id="rate-1">
+                      <label for="rate-1" class="fas fa-star"></label>
+                      <form action="#">
                  <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
      </div>
      </div>
