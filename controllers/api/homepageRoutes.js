@@ -1,9 +1,13 @@
-const router = require('express').Router();
+//Is this page doing anything?  If so, what?
+
+const express = require('express').Router();
+const router = express.Router();
+
 const { Comments } = require('../models');
-const withAuth = require('../utils/auth');
+//const withAuth = require('../utils/auth');
 
 //route to show all reviews for a single book
-router.get('/', (req, res) => {
+router.get('/bookRoutes', (req, res) => {
         Comments.findAll({
         where: { title: req.body.bookId },
         attributes: { include: ['user_id', 'comment', 'stars'] },
@@ -60,4 +64,4 @@ router.put('/:title', (req, res) => {
       });
   });
 
-module.exports = Router;
+module.exports = router;

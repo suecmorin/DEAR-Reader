@@ -1,0 +1,35 @@
+<!--I think we need a book.html template to run this book.handelbars file in..
+ and then link it to the add-book.js file-->
+
+
+<!--copied from activity 10-->
+<div class="book-card">
+  <div class="book-card-header">
+    {{book_title}}
+  </div>
+  <div class="card-body">
+    <p>
+      Title:
+      {{title}}
+    </p>
+    <p>
+      Author:
+      {{author}}
+    </p>
+    <p>
+      Synopsis:
+      {{synopsis}}
+    </p>
+    <p>
+      Page Count:
+      {{pagecount}}
+    </p>
+    <p>
+      Genre:
+      {{genre}}
+    </p>
+    
+  </div>
+</div>
+<!--Handlebars script source-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>

@@ -1,0 +1,81 @@
+{{!-- <div class="menu-container">
+  <div class="card-header col-md-12 text-center">
+    <h2>
+      &#127869 Current Book
+    </h2>
+  </div>
+  {{#each books as |book|}}
+  <div class="dish col-md-4">
+    <p>
+      {{book.id}}.
+      {{book.book_title}}
+    </p>
+  </div>
+  <div class="col-md-5">
+    <p>
+      Author:
+      {{book.author}}
+    </p>
+  </div>
+  <div class="col-md-3">
+    🥜: {{#if dish.has_nuts}} Contains nuts {{else}} No nuts {{/if}}
+  </div>
+  {{/each}}
+  <!-- This is the form for adding a new dish -->
+  <div class="add-dish-container">
+    <h2>
+      RSVP with the book you plan to review!
+    </h2>
+    <form class="new-dish-form">
+      <label for="dish_name">
+        Book Title::
+      </label>
+      <br />
+      <textarea id="book_title" name="book_title" rows="2" cols="30">
+      {{book_title}}
+    </textarea>
+      <br />
+      <label for="author">
+        Author:
+      </label>
+      <br />
+      <textarea id="author" name="author" rows="5" cols="30">
+      {{author}}
+    </textarea>
+      <br />
+      <label for="synopsis">
+        Synopsis:
+      </label>
+      <br />
+      <textarea id="synopsis" name="synopsis" rows="2" cols="30">
+      {{synopsis}}
+    </textarea>
+      <br />
+      <br />
+      <label for="pagecount">
+        Page Count:
+      </label>
+      <br />
+      <textarea id="pagecount" name="pagecount" rows="2" cols="30">
+      {{pagecount}}
+    </textarea>
+      <br />
+      <br />
+      <label for="genre">
+        Genre:
+      </label>
+      <br />
+      <textarea id="genre" name="genre" rows="2" cols="30">
+      {{genre}}
+    </textarea>
+      <br />
+      <br />
+     
+      <button type="submit" value="Submit">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+<script src="../public/js/add-book.js"></script> --}}
