@@ -31,7 +31,8 @@ async function newFormHandler(event) {
   }
   
   document
-    //This is not the right syntax for .new-book-form
+    //This is not the right syntax for .new-book-form,
+    // need to find the name from html or handlebars
     .querySelector('.new-book-form')
     .addEventListener('submit', newFormHandler);
   
