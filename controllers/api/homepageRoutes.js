@@ -1,8 +1,10 @@
+//Is this page doing anything?  If so, what?
+
 const express = require('express').Router();
 const router = express.Router();
 
 const { Comments } = require('../models');
-const withAuth = require('../utils/auth');
+//const withAuth = require('../utils/auth');
 
 //route to show all reviews for a single book
 router.get('/bookRoutes', (req, res) => {
