@@ -14,10 +14,12 @@ body{
 .jumbotron {
 height: 100px;
 }
-
+.loginform {
+  margin-top: 425px;
+}
 .home-card {
 
-  margin-top: 225px;
+  margin-top: 425px;
 
 }
 
